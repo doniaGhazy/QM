@@ -170,6 +170,16 @@ bool existed (vector<int> v, int element, int size)
     return false;
 }
 
+string FromDec2Bin(int n, int size) 
+{
+    string str;
+    int len;
+    str = bitset<16>(n).to_string();
+    len = str.length();
+    str = str.erase(0, len - VariNum);
+    return str;
+}
+
 int main()
 {
     //  vector <int> input;
