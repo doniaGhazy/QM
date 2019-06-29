@@ -160,7 +160,15 @@ string CheckAdj(string str1, string str2)
         return combinedString;
     
 }
-
+bool existed (vector<int> v, int element, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (v[i] == element)
+            return true;
+    }
+    return false;
+}
 
 int main()
 {
